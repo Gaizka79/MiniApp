@@ -1,0 +1,2 @@
+# MiniApp
+klasean egindako ariketa
