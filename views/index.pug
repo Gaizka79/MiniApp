@@ -1,0 +1,24 @@
+include ./head.pug 
+include ./header.pug 
+main
+    h3   Añadir producto: 
+
+    form(action="/", method="post") 
+        label(for="nombre") Nombre:
+        input(type="text", name="nombre")
+
+        label(for="precio") Precio:
+        input(type="text", name="precio")
+
+        label(for="descripcion") Descripción:
+        input(type="text", name="descripcion")
+
+        label(for="img") Imagen: 
+        input(type="file", name="img", onChange="handleUpload")
+        
+        button(type="submit", onClick="uploadFile()") Guardar
+
+    a(href="./productos") Productos
+
+
+include ./footer.pug 
