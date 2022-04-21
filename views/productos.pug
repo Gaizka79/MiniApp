@@ -1,0 +1,13 @@
+include ./head.pug 
+include ./header.pug 
+
+main 
+    each product in productos
+        p Nombre: #{product.nombre}
+        p Precio: #{product.precio}
+        p Descripción: #{product.descripcion}
+        p Imagen: 
+        .imagen 
+            img(src=product.url, alt="Foto")
+
+include ./footer.pug 
